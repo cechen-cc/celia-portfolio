@@ -11,9 +11,29 @@ const projects = [
   { id:'employer-branding', client:'Employer Branding', title:'Turning employer value into candidate relevance', tags:['Employer Branding','Campus Recruitment','Talent Communication'], intro:'Employer branding and campus recruitment programs for adidas, Coach, Sephora and other global brands.', context:'Brands needed to communicate their employer value proposition clearly so they could attract top talent in a competitive hiring market.', roles:['Project Management','Marketing Communication','Cross-functional Collaboration'], did:['Translated employer propositions into candidate-facing communication plans','Planned WeChat and campaign content around brand and audience needs','Coordinated clients, strategists, copywriters and creative teams','Managed stakeholder feedback, quality and delivery across parallel projects','Supported research and ideation with AI tools'], outcome:'The programs delivered clear, brand-consistent employer communication across digital and offline candidate touchpoints.', color:'#d9ef66', hero:'/projects/employer-branding/hero-hundsun.jpg', assets:[{type:'image',src:'/projects/employer-branding/hero-hundsun.jpg',label:'HUNDSUN Campus Recruitment'},{type:'image',src:'/projects/employer-branding/uaes-camp.jpg',label:'UAES U+AI Challenge Camp'},{type:'image',src:'/projects/employer-branding/adidas-program.jpg',label:'adidas Future Store Manager Program'},{type:'image',src:'/projects/employer-branding/sephora-material.jpg',label:'Sephora Employer Brand Material'},{type:'image',src:'/projects/employer-branding/budweiser-event.jpg',label:'Budweiser Event Material'},{type:'image',src:'/projects/employer-branding/hengbao-ip.jpg',label:'Employer Brand IP Character'},{type:'image',src:'/projects/employer-branding/campaign-poster.jpg',label:'Recruitment Campaign Poster'},{type:'image',src:'/projects/employer-branding/recruitment-poster.jpg',label:'Offline Recruitment Poster'},{type:'image',src:'/projects/employer-branding/recruitment-longform-01.jpg',label:'Recruitment Communication Longform 01'},{type:'image',src:'/projects/employer-branding/recruitment-longform-02.jpg',label:'Recruitment Communication Longform 02'}] },
 ]
 
+projects.find(project => project.id === 'smart').assets[0] = {
+  type: 'mov',
+  src: '/projects/smart/design-film.mov',
+  label: 'Design Film · 30 sec',
+}
+projects.find(project => project.id === 'smart').assets[1] = {
+  type: 'mov',
+  src: '/projects/smart/performance-film.mov',
+  label: 'Performance Film',
+}
+projects.find(project => project.id === 'pgi').assets[0] = {
+  type: 'mov',
+  src: '/projects/pgi/lazy-story.mov',
+  label: 'Becoming Lazy · English Version',
+}
+projects.find(project => project.id === 'pgi').assets[1] = {
+  type: 'mov',
+  src: '/projects/pgi/photo-story.mov',
+  label: 'Taking Photos · English Version',
+}
 projects.find(project => project.id === 'momcozy').assets[0] = {
-  type: 'video',
-  src: '/projects/momcozy/campaign-film.mp4',
+  type: 'mov',
+  src: '/projects/momcozy/campaign-film.mov',
   label: 'Father’s Day Campaign Film · 66 sec',
 }
 
